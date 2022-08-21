@@ -1,0 +1,19 @@
+.feature {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.feature-list {
+  @extend %reset-list;
+  display: flex;
+  gap: 30px;
+
+  &__item {
+    flex-basis: 270px;
+  }
+}
+.feature__text {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--dark-txt-cl);
+}

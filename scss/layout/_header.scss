@@ -1,0 +1,51 @@
+/**
+  |============================
+  | block 4
+  |============================
+*/
+.logo {
+  color: var(--accent-txt-cl);
+}
+.header__logo {
+  @extend %reset-link;
+  margin-right: 93px;
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--main-txt-cl);
+}
+.header__container {
+  display: flex;
+  align-items: center;
+}
+.header__phone,
+.header__mail {
+  @extend %reset-link;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  transition: color var(--anim-fast);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-txt-cl);
+  }
+}
+
+.header__contacts {
+  @extend %reset-list;
+  display: flex;
+  gap: 50px;
+
+  &-item {
+    color: var(--dark-txt-cl);
+  }
+}
